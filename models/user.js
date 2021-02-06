@@ -51,16 +51,11 @@ module.exports = (sequelize, DataTypes) => {
                 type : DataTypes.STRING,
             },
     
-            user_isAdmin : {
-                type : DataTypes.BOOLEAN,
-                allowNull : false,
-                defaultValue : 0
-            },
             });
 
             
         User.associate = models => {
-                User.hasOne(models.Pal)        
+                User.hasOne(models.Pal, {foreignKey:'user_ID' })        
             }
             return User;
         }

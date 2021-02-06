@@ -11,17 +11,18 @@ module.exports = (sequelize, DataTypes) => {
             primaryKey: true, 
             allowNull: false, 
             },
-        lastname : {
+        book : {
             type : DataTypes.STRING,
             allowNull: false
         },
-        read : {
-            type : DataTypes.BOOLEAN,
-            defaultValue : 0
-        },
+        // read : {
+        //     type : DataTypes.BOOLEAN,
+        //     defaultValue : 0
+        // },
     })
     Pal.associate = models => {
-        Pal.belongsTo(models.User)        
+        Pal.belongsTo(models.User, {foreignKey:'user_ID' }), 
+        Pal.hasMany(models.Book, {foreignKey:'pal_ID' })        
     }
     return Pal
 }

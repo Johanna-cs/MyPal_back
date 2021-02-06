@@ -1,21 +1,21 @@
 {
   "development": {
     "username": "root",
-    "password": "Pyewaket83!",
+    "password": "Ilford13!",
     "database": "my_pal",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "Pyewaket83!",
+    "password": "Ilford13!",
     "database": "my_pal",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
-    "password": "Pyewaket83!",
+    "password": "Ilford13!",
     "database": "my_pal",
     "host": "127.0.0.1",
     "dialect": "mysql"
