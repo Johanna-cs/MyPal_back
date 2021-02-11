@@ -3,11 +3,10 @@ const models = require('./models')
 const app = express()
 const port = 4001
 const userRouter = require('./routes/userRouter')
-
 const cors = require('cors');
 const bodyParser =require('body-parser');
-app.use(cors());
 
+app.use(cors());
 app.use(bodyParser.urlencoded({
   extended: false
 }));
@@ -17,7 +16,6 @@ app.use(express.json());
 app.use(express.urlencoded({
   extended: true
 }));
-
 
 
 app.get('/', (req, res) => {
